@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Medtogethervt</title>
+  <title><%= content_for?(:title) ? yield(:title) : 'Medtogether Vermont' %></title>
+
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
+
   <%= csrf_meta_tags %>
+
+  <% if content_for?(:keywords) %>
+    <meta name="keywords" content="<%= yield(:keywords) %>" />
+  <% end %>
 </head>
 <body>
+<% if flash[:notice] %>
+  <p class="notice"><%= flash[:notice] %></p>
+<% end %>
+<% if flash[:error] %>
+  <p class="error"><%= flash[:error] %></p>
+<% end %>
 
-<%= yield %>
+<div class="main <%=  @page_class if defined? @page_class %>">
+  <div class="header">
+    <%=  render partial: 'layouts/header' %>
+  </div>
 
+  <div class="content">
+    <%= content_for?(:content) ? yield(:content) : yield %>
+  </div>
+
+  <div class="footer">
+    <%= render partial: 'layouts/footer' %>
+  </div>
+</div>
 </body>
 </html>
