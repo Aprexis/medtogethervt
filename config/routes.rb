@@ -1,4 +1,20 @@
 Medtogethervt::Application.routes.draw do
+  get "static_pages/welcome"
+
+  get "static_pages/contact"
+
+  get "static_pages/aprexis"
+
+  get "static_pages/mtm"
+
+  get "static_pages/patient"
+
+  get "static_pages/pharmacy"
+
+  get "static_pages/physician"
+
+  get "static_pages/healthplan"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +64,7 @@ Medtogethervt::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'static_pages#welcome'
 
   # See how all your routes lay out with "rake routes"
 

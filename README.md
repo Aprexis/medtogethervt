@@ -1,0 +1,4 @@
+-== Welcome to MedtogetherVT
+-
+-MedtogetherVT is a minimal website to brand Aprexis MTM program in VT and organize our recruitment of pharmacists,
+-patients, payers, physicians and legislative members in Vermont.
