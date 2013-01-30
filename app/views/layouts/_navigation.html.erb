@@ -1,10 +1,12 @@
-<div class="nav_bar">
+<div class="nav-bar">
   <ul class="nav">
-    <li>
-      <%= link_to 'Welcome', static_pages_welcome_path, class: active_option('welcome') %>
-    </li>
-    <li>
-      <%= link_to 'Contact Us', static_pages_contact_path, class: active_option('contact') %>
-    </li>
+    <li><%= link_to 'Welcome', static_pages_welcome_path, class: active_option('welcome') %></li>
+    <li><%= link_to 'What is MTM?', static_pages_mtm_path, class: active_option('mtm') %></li>
+    <li><%= link_to 'Patients', static_pages_patient_path, class: active_option('patient') %></li>
+    <li><%= link_to 'Pharmacies', static_pages_pharmacy_path, class: active_option('pharmacy') %></li>
+    <li><%= link_to 'Physicians', static_pages_physician_path, class: active_option('physician') %></li>
+    <li><%= link_to 'Plans', static_pages_healthplan_path, class: active_option('healthplan') %></li>
+    <li><%= link_to 'Aprexis', static_pages_aprexis_path, class: active_option('aprexis') %></li>
+    <li><%= link_to 'Contact Us', static_pages_contact_path, class: active_option('contact') %></li>
   </ul>
 </div>
