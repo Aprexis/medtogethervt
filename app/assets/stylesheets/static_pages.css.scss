@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 $nav_bar_background : #087593;
-$standard_nav_button_width: 140px;
+$standard_nav_button_width: 145px;
 $standard_nav_button_height: 60px;
 
 body {
@@ -13,6 +13,11 @@ body {
 // navigation
 .nav-bar {
   background-image: url(image_path('bg-body.png'));
+}
+.nav-bar ul.nav {
+  width: ($standard_nav_button_width + 4px) * 8 ;
+  margin-right: auto;
+  margin-left: auto;
 }
 .nav-bar li {
   display: inline-block;
@@ -27,7 +32,7 @@ body {
   line-height: $standard_nav_button_height;
   margin-bottom: auto;
   margin-top: auto;
-  width: $standard_nav_button_width - 2px;
+  width: $standard_nav_button_width;
   text-align: center;
   text-decoration: none;
 }
