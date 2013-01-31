@@ -2,9 +2,15 @@
 // They will automatically be included in application.css.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import 'application';
+
 $nav_bar_background : #087593;
 $standard_nav_button_width: 145px;
 $standard_nav_button_height: 60px;
+$footer_background_color    : #122C36;
+$footer_height              : 123px;
+$footer_font_size           : 14px;
+$footer_padding             : 3em;
 
 body {
   background-color: white;
@@ -35,4 +41,25 @@ body {
   width: $standard_nav_button_width;
   text-align: center;
   text-decoration: none;
+}
+.footer {
+  background-color: $footer_background_color;
+  color: white;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: $footer_font_size;
+  padding-bottom: $footer_padding;
+  padding-top: $footer_padding;
+
+  p {
+    @include horizontal-center-block;
+    margin-bottom: $footer_font_size / 2;
+  }
+
+  .support {
+    width: 29em;
+  }
+
+  .copyright {
+    width: 23em;
+  }
 }
