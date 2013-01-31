@@ -7,6 +7,13 @@
 $nav_bar_background : #087593;
 $standard_nav_button_width: 145px;
 $standard_nav_button_height: 60px;
+
+$standard_font_size         : 15px;
+$standard_text_color        : #444444;
+$standard_font_family       : Helvetica,Arial,sans-serif;
+$standard_line_height       : 1.4em;
+$standard_width             : 900px;
+
 $footer_background_color    : #122C36;
 $footer_height              : 123px;
 $footer_font_size           : 14px;
@@ -42,10 +49,33 @@ body {
   text-align: center;
   text-decoration: none;
 }
+div.content {
+  @include horizontal-center-block;
+
+  color: $standard_text_color;
+  font-family: $standard_font_family;
+  font-size: $standard_font_size;
+  line-height: $standard_line_height;
+  width: $standard_width;
+  margin-bottom: 2em;
+
+  h1, h2, h3 {
+    color: #023D4D;
+    font-family: 'Conv_HelveticaBold';
+    font-weight: normal;
+    margin-bottom: $standard_font_size;
+  }
+  h1 {
+    font-size: $standard_font_size + (4 * 2px);
+  }
+  p {
+    margin-bottom: $standard_font_size / 2;
+  }
+}
 .footer {
   background-color: $footer_background_color;
   color: white;
-  font-family: Helvetica,Arial,sans-serif;
+  font-family: $standard_font_family;
   font-size: $footer_font_size;
   padding-bottom: $footer_padding;
   padding-top: $footer_padding;
