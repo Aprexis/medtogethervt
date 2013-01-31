@@ -1,2 +1,9 @@
-<h1>StaticPages#welcome</h1>
-<p>Find me in app/views/static_pages/welcome.html.erb</p>
+<%= content_for :content do %>
+  <h1>Welcome to the Future of Pharmacy</h1>
+  <p>MedTogetherVT is the new statewide, commercial Medication Therapy Management (“MTM”) program aligning health plans and community pharmacy to better manage patient medication therapies.</p>
+  <p>Launched by a partnership including, Blue Cross Blue Shield of Vermont (the leading health plan in the state), and Vermont-based, Aprexis Health Solutions (a pioneering thought leader in the MTM industry), and a growing network of independent pharmacies throughout the state, MedTogetherVT aligns healthcare stakeholders in vision, communication, data and economic incentives to deliver better patient outcomes, reduced cost of care and increased professional fulfillment through health plan sponsored, community pharmacy-driven patient interventions.</p>
+  <p>If you are a patient and have recently received an MTM invitation from MedTogether and would like to learn more, <%= link_to 'click here', static_pages_patient_path %></p>
+  <p>If you are a pharmacy and would like to participate in MedTogether by joining our network, <%= link_to 'click here', static_pages_pharmacy_path %>.</p>
+  <p>If you are a physician and would like to learn more about MedTogether and MTM, <%= link_to 'click here', static_pages_physician_path %></p>
+  <p>If you are a health plan or government program administrator and would like to learn more about MedTogther and how it can help you serve your members, <%= link_to 'click here', static_pages_healthplan_path %></p>
+<% end %>
