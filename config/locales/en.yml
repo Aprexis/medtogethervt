@@ -2,5 +2,4 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  copyright_msg:  |-
-                <p>All Rights Reserved. Copyright &copy; 2013 Aprexis Health Solutions</p>
+  copyright_msg: 'All Rights Reserved. Copyright © 2013'
