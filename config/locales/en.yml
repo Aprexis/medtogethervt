@@ -2,4 +2,7 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  copyright_msg: 'All Rights Reserved. Copyright © 2013'
+  copyright_msg                       : 'Copyright © 2013 Aprexis, Inc. All Rights Reserved.'
+  medtogethervt_support_phone_number  : '(XXX) XXX-XXXX'
+  medtogethervt_info_email            : 'info@medtogethervt.com'
+  medtogethervt_support_email         : 'support@medtogethervt.com'
