@@ -33,6 +33,7 @@ a:hover {
 // navigation
 .nav-bar {
   background-image: url(image_path('bg-body.png'));
+  margin-bottom: 2em;
 }
 .nav-bar ul.nav {
   width: ($standard_nav_button_width + 4px) * 8 ;
@@ -55,6 +56,11 @@ a:hover {
   width: $standard_nav_button_width;
   text-align: center;
   text-decoration: none;
+}
+div.banner {
+  margin-bottom: 2em;
+  margin-left: 100px;
+  width: 357px;
 }
 div.content {
   @include horizontal-center-block;
