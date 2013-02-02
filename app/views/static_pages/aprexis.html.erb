@@ -1,2 +1,8 @@
-<h1>StaticPages#aprexis</h1>
-<p>Find me in app/views/static_pages/aprexis.html.erb</p>
+<%= content_for :content do %>
+  <h1>Powered By Aprexis</h1>
+  <p>At Aprexis, our mission is to create a solution for effectively navigating medication therapy management programs. Aprexis’ unique offering of cloud-based software system incorporates evidence-based guidelines for care and makes it possible to successfully monitor the effectiveness of deployed MTM programs. Based in Burlington, Vermont, Aprexis was founded in 2009 and is a privately held corporation.</p>
+
+  <p>For the first time, there is a solution that combines a software and a service. Aprexis offers a technology platform that specifically meets the needs of pharmacists, providers and health plans. Through the implementation of patient identification and program creation, pharmacist intervention, and system administration, Aprexis provides complete answer for managing MTM. In addition, Aprexis differientiates itself by providing a unique Pharmacy Network Service that aids in the building of a participating pharmacy networks within a region. </p>
+
+  <p>For more information about Aprexis, <%= link_to 'visit our wesbiste', t(:aprexis_dot_com) %>, email us at <%= mail_to t(:aprexis_info_email) %>, or call us at <%= t(:aprexis_phone_number) %></p>
+<% end %>
