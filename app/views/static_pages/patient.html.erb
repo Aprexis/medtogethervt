@@ -1,2 +1,4 @@
-<h1>StaticPages#patient</h1>
-<p>Find me in app/views/static_pages/patient.html.erb</p>
+<%= content_for :content do %>
+  <h1>Patients & <%=t(:medtogether_vermont) %></h1>
+  <p>This page is under construction. Check back with us soon, or call us at <%= t(:medtogethervt_support_phone_number) %> or email us at <%= mail_to t(:medtogethervt_info_email) %>.</p>
+<% end %>
