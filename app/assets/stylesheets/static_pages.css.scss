@@ -13,6 +13,7 @@ $standard_text_color        : #444444;
 $standard_font_family       : Helvetica,Arial,sans-serif;
 $standard_line_height       : 1.4em;
 $standard_width             : 900px;
+$standard_minimum_height    : 450px;
 
 $footer_background_color    : #122C36;
 $footer_height              : 123px;
@@ -81,8 +82,20 @@ div.content {
   h1 {
     font-size: $standard_font_size + (4 * 2px);
   }
+  h2 {
+    font-size: $standard_font_size + (3 * 2px);
+  }
+  h3 {
+    font-size: $standard_font_size + (2 * 2px);
+  }
   p {
     margin-bottom: $standard_font_size / 2;
+  }
+  .left-column {
+    float: left;
+  }
+  .right-column {
+    float: right;
   }
 }
 .footer {
@@ -105,4 +118,9 @@ div.content {
   .copyright {
     width: 325px;
   }
+}
+
+// Contact Us Page
+.contact .content {
+  height: $standard_minimum_height;
 }

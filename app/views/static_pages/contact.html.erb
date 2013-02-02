@@ -1,2 +1,26 @@
-<h1>StaticPages#contact</h1>
-<p>Find me in app/views/static_pages/contact.html.erb</p>
+<% @page_class = 'contact' %>
+<%= content_for :content do %>
+  <h2 class="center-text">Based in Montpelier</h2>
+  <h1>Contact Us</h1>
+  <div class="left-column">
+    <div class="address">
+      <h3>Medtogether Vermont</h3>
+      <dl>
+        <dt>Phone:</dt>
+        <dd><%= t(:medtogethervt_support_phone_number) %></dd>
+        <dt>Fax:</dt>
+        <dd><%= t(:medtogethervt_fax_phone_number) %></dd>
+      </dl>
+    </div>
+  </div>
+  <div class="right-column">
+    <div class="sales-email">
+      <h3>General Inquiries</h3>
+      <p><%= mail_to t(:medtogethervt_info_email) %></p>
+    </div>
+    <div class="support-email">
+      <h3>Customer Support </h3>
+      <p><%= mail_to t(:medtogethervt_support_email) %></p>
+    </div>
+  </div>
+<% end %>
