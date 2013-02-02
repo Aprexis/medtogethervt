@@ -20,7 +20,7 @@
   <p class="error"><%= flash[:error] %></p>
 <% end %>
 
-<div class="main <%=  @page_class if defined? @page_class %>">
+<div class="<%=  @page_class if defined? @page_class %> main">
   <div class="header">
     <%=  render partial: 'layouts/header' %>
   </div>
